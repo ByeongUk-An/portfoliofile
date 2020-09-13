@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>무료 통화 메시지 앱 LINE</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://line.me/apple-touch-icon-precomposed.png"
+    />
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header_wrap">
+        <div class="header_inner">
+          <div class="header_nav_left">
+            <h1>
+              <a href="http://webdev.iptime.org/abw/Line/index.html">LINE</a>
+            </h1>
+            <ul>
+              <li>
+                <a href="http://webdev.iptime.org/abw/Line/single1.html"
+                  >다운로드</a
+                >
+                <span>|</span>
+              </li>
+              <li>
+                <a href="http://webdev.iptime.org/abw/Line/single2.html"
+                  >패밀리앱</a
+                >
+                <span>|</span>
+              </li>
+              <li>
+                <a href="http://webdev.iptime.org/abw/Line/single3.html"
+                  >게임</a
+                >
+                <span>|</span>
+              </li>
+              <li>
+                <a href="http://webdev.iptime.org/abw/Line/single4.html"
+                  >line store</a
+                >
+                <span>|</span>
+              </li>
+              <!-- text transform 사용하기 -->
+            </ul>
+          </div>
+          <div class="header_right">
+            <div class="header_right_select">
+              <!-- 가상클래스 활용해서 오른쪽밑에 화살표 포지션으로 적용하기 -->
+              <p onclick="abc();">한국어</p>
+              <ul class="select_ul">
+                <li><a href="#">日本語</a></li>
+                <li class="select_han"><a href="#">한국어</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">English(US)</a></li>
+                <li><a href="#">中文(繁體)</a></li>
+                <li><a href="#">中文(简体)</a></li>
+                <li><a href="#">ภาษาไทย</a></li>
+                <li><a href="#">Bahasa Indonesia</a></li>
+                <li><a href="#">Tiếng Việt</a></li>
+                <li><a href="#">Português</a></li>
+                <li><a href="#">Melayu</a></li>
+                <li><a href="#">Español(España)</a></li>
+                <li><a href="#">Hindi</a></li>
+                <li><a href="#">Español(latinoamérica)</a></li>
+                <li><a href="#">Türkçe</a></li>
+                <li><a href="#">Español(Argentina)</a></li>
+                <li><a href="#">Русский</a></li>
+                <li><a href="#">Italiano</a></li>
+                <li><a href="#">Deutsch</a></li>
+                <li><a href="#">Français</a></li>
+              </ul>
+            </div>
+            <!-- //header select -->
+            <ul class="header_social">
+              <li class="social_li1"><a href="#">youtube</a></li>
+              <li class="social_li2"><a href="#">facebook</a></li>
+              <!-- ul 끝나는 지점 가상클래스로 백그라운드 이미지 넣기 -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main-slide">
+      <div>
+        <img src="./img/line1.jpeg" alt="사진1" />
+      </div>
+      <div>
+        <img src="./img/line2.jpeg" alt="사진2" />
+      </div>
+      <div>
+        <img src="./img/line3.jpeg" alt="사진3" />
+      </div>
+      <div>
+        <img src="./img/line4.jpeg" alt="사진4" />
+      </div>
+    </div>
+    <div class="contents_wrap">
+      <div class="contents_inner">
+        <section class="img_left clearfix">
+          <div class="free_line">
+            <img
+              src="https://d.line-scdn.net/stf/line-lp/ko_2016_01.png"
+              alt="언제 어디서나 무료 메시지"
+            />
+          </div>
+          <div class="free_text">
+            <h2 class="img_head">
+              언제 어디서나<br />
+              무료 메시지
+            </h2>
+            <p class="img_p">
+              언제 어디서나 빠르고 간편하게 친구들과 무료 메시지를<br />
+              나눠보세요. 1:1은 물론 그룹 대화도 가능합니다.<br />
+              아이폰과 안드로이드, 윈도우폰, 블랙베리, 노키아폰 등의<br />
+              스마트폰 뿐만 아니라 PC에서도 즐길 수 있습니다.
+            </p>
+          </div>
+        </section>
+        <section class="img_right clearfix">
+          <div class="free_text">
+            <h2 class="img_head">
+              무료<br />
+              영상/음성 통화
+            </h2>
+            <p class="img_p">
+              아무리 멀리 떨어져 있는 친구라도 LINE만 있으면<br />
+              실시간 영상/음성통화가 무료!<br />
+              듣고 싶은 목소리, 보고 싶은 얼굴이 있다면 망설이지 마세요.
+            </p>
+            <p class="img_p">
+              현재 iPhone, Android 폰, Windows Phone, iPad,<br />
+              PC(Windows/macOS) 및 LINE Lite(Android에서 제공)<br />
+              에서 이용할 수 있습니다.
+            </p>
+          </div>
+          <div class="free_call">
+            <img
+              src="https://d.line-scdn.net/stf/line-lp/ko_2016_02.png"
+              alt="무료영상,음성 통화"
+            />
+          </div>
+        </section>
+        <section class="img_left clearfix img_left3">
+          <div class="free_line free_line1">
+            <img
+              src="https://d.line-scdn.net/stf/lp/character%20update_0516_Img_PNG/2_LINE_Store_PNG/01_ko.png"
+              alt="라인 스티커"
+            />
+          </div>
+          <div class="free_text free_text1">
+            <h2 class="img_head">
+              대화가 더욱<br />
+              즐거워지는<br />
+              LINE 스티커
+            </h2>
+            <p class="img_p">
+              10,000개가 넘는 스티커와 이모티콘으로<br />
+              미묘한 감정까지 섬세하게 표현해 보세요.<br />
+              LINE 스티커로 대화가 더 즐거워집니다.<br />
+              스티커샵에서는 재기 발랄한 LINE 오리지널 캐릭터뿐만 아니라<br />
+              전 세계 유명 캐릭터 스티커까지 모두 만나볼 수 있습니다.
+            </p>
+          </div>
+        </section>
+        <section class="img_right clearfix">
+          <div class="free_text">
+            <h2 class="img_head">
+              사진/동영상<br />
+              공유에서<br />
+              음성 메시지까지
+            </h2>
+            <p class="img_p">
+              사진, 동영상 공유는 물론 음성 메시지와 연락처,<br />
+              위치 정보 전송까지!<br />
+              LINE이라면 친구와 쉽고 빠르게 공유할 수 있습니다.
+            </p>
+          </div>
+          <div class="free_call">
+            <img
+              src="https://d.line-scdn.net/stf/line-lp/ko_2016_04.png"
+              alt="사진,동영상 공유,음성 메시지,연락처,위치 정보전송"
+            />
+          </div>
+        </section>
+        <section class="img_left clearfix">
+          <div class="free_line">
+            <img
+              src="https://d.line-scdn.net/stf/line-lp/OA_KO.png"
+              alt="다양한
+              생활 꿀팁과
+              유용한
+              기능이 가득"
+            />
+          </div>
+          <div class="free_text">
+            <h2 class="img_head">
+              다양한<br />
+              생활 꿀팁과<br />
+              유용한<br />
+              기능이 가득
+            </h2>
+            <p class="img_p">
+              날씨 친구, 재해 속보에서 통역까지!<br />
+              스마트한 LINE 하나면 일상이 더욱 즐거워져요.
+            </p>
+          </div>
+        </section>
+        <!-- 마지막섹션 -->
+        <section class="cont_ul_wrap">
+          <ul class="cont_ul">
+            <li>
+              <img
+                src="https://d.line-scdn.net/stf/line-lp/top_timeline_180904.png"
+                alt="타임라인"
+              />
+              <h3 class="cont_h">
+                타임라인
+                <a href="#">타임라인 로그인 버튼</a>
+              </h3>
+              <p class="cont_p">
+                친구들끼리만 공유하고 싶다면 타임라인에<br />
+                올려보세요. 텍스트, 사진, 동영상, 스티커로<br />
+                내 소식을 공유하고 친구의 소식도<br />
+                확인할 수 있습니다.
+              </p>
+            </li>
+            <li>
+              <img
+                src="https://d.line-scdn.net/stf/line-lp/ko_2016_07.png"
+                alt="keep하고싶은 메시지,사진,동영상"
+              />
+              <h3 class="cont_h">Keep</h3>
+              <p class="cont_p">
+                보관하고 싶었던 메세지, 사진, 동영상 등을<br />
+                이제 Keep에 보관하세요.<br />
+                필요할 때 쉽게 찾아보고 친구들에게도<br />
+                간편하게 공유할 수 있습니다.
+              </p>
+            </li>
+            <li>
+              <img
+                src="https://d.line-scdn.net/stf/line-lp/chatlive_kr_02.png"
+                alt="라이브생중계"
+              />
+              <h3 class="cont_h">Live</h3>
+              <p class="cont_p">
+                우리 아이 첫 걸음마에서 신나는 콘서트, <br />
+                즐거운 모임까지, 혼자만 즐기기 아쉬운 순간들을<br />
+                대화방에서 실시간 영상으로 공유해 보세요.
+              </p>
+            </li>
+            <li>
+              <img
+                src="https://d.line-scdn.net/stf/line-lp/inapp_camera_screenimg%20(1)_modify2%202.png"
+                alt="페이스이펙트"
+              />
+              <h3 class="cont_h">페이스 이펙트</h3>
+              <p class="cont_p">
+                내가 상상했던 모습 그대로 변신!<br />
+                깜찍 필터와 이펙트로 평범한 대화를<br />
+                특별하게 바꿔보세요.
+              </p>
+            </li>
+            <li>
+              <img
+                src="https://d.line-scdn.net/stf/line-lp/Faceplay_global.png"
+                alt="페이스게임"
+              />
+              <h3 class="cont_h">Face Play</h3>
+              <p class="cont_p">
+                우린 얼굴로 승부한다!<br />
+                친구와 영상통화나 대화를 하다가 즐길 수 있는<br />
+                무료 게임 Face Play~!<br />
+                재미있는 게임 스크린샷을 대화방, 타임라인은 물론<br />
+                다양한 SNS에도 간편하게 공유할 수 있어요.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    <!-- //contents_wrap -->
+    <footer class="footer">
+      <h2>LINE Corporation Link</h2>
+      <div class="footer_ul_wrap">
+        <ul>
+          <li>
+            <a href="#">도움말</a>
+            <span>|</span>
+          </li>
+          <li>
+            <a href="#">이용약관</a>
+            <span>|</span>
+          </li>
+          <li>
+            <a href="#">개인정보 처리방침</a>
+            <span>|</span>
+          </li>
+          <li>
+            <a href="#">LINE Social Plugins</a>
+            <span>|</span>
+          </li>
+          <li>
+            <a href="#">LINE Creators Market</a>
+            <span>|</span>
+          </li>
+          <li>
+            <a href="#">LINE 로고 사용 가이드</a>
+            <span>|</span>
+          </li>
+          <li>
+            <a href="#">LINE Partners</a>
+            <span>|</span>
+          </li>
+          <li>
+            <a href="#">LINE 블로그</a>
+            <span>|</span>
+          </li>
+          <li>
+            <a href="#">채용정보</a>
+          </li>
+        </ul>
+      </div>
+      <p>
+        <small> © <b>LINE Corporation</b> </small>
+      </p>
+    </footer>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".main-slide").slick({
+          dots: true,
+          infinite: true,
+          autoplay: true,
+        });
+      });
+    </script>
+  </body>
+</html>

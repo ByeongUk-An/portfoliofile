@@ -1,0 +1,136 @@
+.bg {
+    position: relative;
+    width: 100%;
+    height: 490px;
+    overflow: hidden;
+    background: url("../img/visual_ir.jpg");
+}
+@keyframes aniPattern2 {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(3deg) scale(1.03);
+    }
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.bg::after {
+    position: absolute;
+    width: 100%;
+    height: 490px;
+    top: 0;
+    
+    content: '';
+    background: url("../img/visual.png") no-repeat 50% 100%;
+    animation: aniPattern2 10s infinite ease-in-out both;
+        
+}
+
+.bg .text-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+/*    justify-content: center;*/
+    align-items: center;
+}
+.bg .text-box h1 {
+    color: #fff;
+    font-size: 50px;
+	margin-top: 150px;
+	line-height: 94px;
+    margin-bottom: 0;
+}
+.bg .text-box p {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.bg .bgbottom {
+	width: 100%;
+	height: 70px;
+    position: absolute;
+    bottom: 0;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.bg .bgbottom .wrap {
+	max-width: 1200px;
+	height: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+	align-items: center;
+}
+.bg .bgbottom .wrap p {
+    color: #fff;
+	margin: auto 0;
+	padding-right: 50px;
+    font-size: 15px;
+    font-weight: 900;
+	cursor: pointer;
+	opacity: 1;
+}
+
+.select{
+	margin: 0;
+	padding-top: 160px;
+	width: 100%;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+}
+.select .selectbox{
+	width: 150px;
+	height: 36px;
+	border: 0px;
+}
+
+.select .inputbox{
+	width: 216px;
+	height: 36px;
+	border: 0px;
+	margin-left: 50px;
+}
+
+.select .imgbox{
+	width: 20px;
+	height: 20px;
+	border: 0px;
+	margin: 10px;
+}
+
+.tablebox{
+	margin: 0;
+	padding: 50px auto;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.tablebox table{
+	width: 60%;
+	height: 200px;
+	border-top: 2px solid #000;
+	border-collapse: collapse;
+	text-align: center;
+	margin-bottom: 200px;
+	font-size: 16px;
+}
+.tablebox th{
+	border-bottom: 1px solid #282828;
+}
+
+.tablebox tr{
+	border-bottom: 1px solid #dadada;
+}
+
+
+

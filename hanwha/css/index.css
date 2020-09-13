@@ -1,0 +1,1364 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+}
+html {
+  letter-spacing: -0.03em;
+}
+/* clearfix */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+/* 헤더영역 */
+.navi {
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #dadada;
+}
+ul {
+  list-style: none;
+}
+.navi ul {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding: 0;
+}
+.navi ul li {
+  width: 15%;
+  height: 100%;
+  line-height: 100px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+}
+.navi .logo {
+  width: 130px;
+  height: 40px;
+  margin: 30px;
+}
+.navi .whologoopen {
+  width: 140px;
+  height: 40px;
+  margin: 30px;
+  background-image: url("../img/whoareyou.png");
+  display: inline;
+  border: none;
+  color: #fff;
+}
+.navi .whologoclose {
+  width: 140px;
+  height: 40px;
+  margin: 30px;
+  display: none;
+  background-image: url("../img/whoareyou2.png");
+  border: none;
+}
+
+.navi .btn {
+  width: 40px;
+  height: 40px;
+  margin: 30px;
+}
+
+.navi .btnopen {
+  width: 40px;
+  height: 40px;
+  margin: 30px;
+  display: inline;
+  background-color: white;
+  background-image: url("../img/btn1.png");
+  border: 0px;
+}
+.navi .btnclose {
+  width: 40px;
+  height: 40px;
+  margin: 30px;
+  display: none;
+  background-color: white;
+  background-image: url("../img/btn2.png");
+  border: none;
+}
+.coinfo:hover {
+  color: #ff6600;
+  cursor: pointer;
+}
+.investinfo:hover {
+  color: #ff6600;
+  cursor: pointer;
+}
+.coarea:hover {
+  color: #ff6600;
+  cursor: pointer;
+}
+.recruit:hover {
+  color: #ff6600;
+  cursor: pointer;
+}
+.adver:hover {
+  color: #ff6600;
+  cursor: pointer;
+}
+.menu {
+  width: 100%;
+  height: auto;
+  display: none;
+  margin: 0;
+  padding: 20px;
+  z-index: 10;
+  position: absolute;
+  background-color: white;
+}
+
+.menu > ul {
+  width: 900px;
+  margin-left: 30%;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+}
+.menu .menuright {
+  width: 500px;
+  margin-left: 45%;
+  height: 100%;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+}
+.menu ul li {
+  margin: 0;
+  width: 22%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.menu ul li p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.menu > ul li .sub {
+  padding: 0;
+}
+.menu > ul li .sub li {
+  width: 100%;
+  text-align: left;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.menu > ul li .sub li:hover {
+  color: #ff6600;
+  cursor: pointer;
+}
+.ep > ul {
+  padding: 50px 0;
+  border-bottom: 1px solid #dadada;
+}
+.menu .eptitle {
+  margin: 60px;
+  font-size: 25px;
+  font-weight: 600;
+  padding-left: 300px;
+  display: inline-block;
+  position: absolute;
+}
+.menu .eptitle:hover {
+  color: #ff6600;
+  cursor: pointer;
+}
+
+.whomenu {
+  width: 100%;
+  height: auto;
+  display: none;
+  margin: 0;
+  padding: 20px;
+  z-index: 10;
+  position: absolute;
+  background-color: white;
+}
+.whomenu .whotablebox {
+  margin: 50px auto;
+  padding: 50px auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.whomenu .whotablebox table {
+  width: 65%;
+  height: auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 16px;
+}
+.whomenu .whotablebox th {
+  font-size: 28px;
+  padding-bottom: 20px;
+  border-right: 1px solid #dadada;
+}
+
+.whomenu .whotablebox td {
+  font-size: 16px;
+  padding: 10px;
+  border-right: 1px solid #dadada;
+}
+
+.whomenu .whotablebox .wholasttr {
+  border-right: none;
+}
+.whomenu .whotablebox td:hover {
+  text-decoration: underline;
+}
+
+.familybox {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 20px;
+  z-index: 10;
+  background-color: #f2f2f2;
+  display: none;
+}
+.familybox .familytable {
+  margin: 50px auto;
+  padding: auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.familybox .familytable table {
+  width: 65%;
+  height: auto;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 16px;
+}
+.familybox .familytable th {
+  font-size: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.familybox .familytable td {
+  font-size: 16px;
+  padding: 5px;
+}
+
+/* #slider는 이미지를 감싸는 wrap이라고 생각하기 */
+#slider {
+  width: 100%;
+
+  height: 735px;
+}
+/* wrap안에 박스안 이미지 형태로 구성하고 엡솔루트 주는 이유는 이미지를 한곳에 모으기위해서
+그리고 zindex와 opacity를 0으로 준 이유는 showing 클래스가 추가되었을때 순서를 나타내기위해 */
+.slider__item {
+  width: 100%;
+  height: 735px;
+  color: #fff;
+  font-size: 48px;
+  position: absolute;
+  z-index: 0;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+.slider__item > img {
+  width: 100%;
+}
+
+.slide_sec {
+  width: 100%;
+  height: 735px;
+  position: relative;
+}
+/* showing은 없는 클래스 자바스크립트로 생성 시키거나 제거시킨다 */
+.showing {
+  z-index: 1;
+  opacity: 1;
+}
+
+.readmore {
+  position: absolute;
+  left: 50%;
+  bottom: 105px;
+  transform: translateX(-50%);
+  min-width: 210px;
+  padding: 0 29px;
+  border-radius: 32px;
+  z-index: 10;
+  border-color: #ff6600;
+  background: #ff6600;
+  text-align: center;
+}
+.readmore > a {
+  line-height: 58px;
+  height: 60px;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* 슬라이드 버튼 */
+.btn_wrap {
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  z-index: 100;
+}
+
+.btn_off {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+}
+.btn_on {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #fff;
+}
+
+/* mainwrapper inner */
+.main_wrapper {
+  width: 100%;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* stock_info */
+.stock_info_wrap {
+  margin-top: 135px;
+}
+.info_ul {
+  background: #fff;
+  height: 142px;
+  border-bottom: 1px solid #000;
+}
+.info_ul > li {
+  float: left;
+  height: 137px;
+  line-height: 137px;
+}
+
+.info_ul > li:first-child > h2 {
+  font-size: 25px;
+  font-weight: bold;
+  height: 142px;
+  line-height: 137px;
+  margin-right: 40px;
+}
+.info_ul .info_li2 {
+  padding: 0 40px;
+  margin-top: 5px;
+  margin-right: 20px;
+}
+.info_ul .info_li2::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 30px;
+  margin: 0 25px 0 0;
+  background: url(https://www.hanwhasystems.com/resources/img/pc/com/img_set1.png)
+    no-repeat -60px 0;
+}
+.info_ul .info_li2 > b {
+  font-size: 40px;
+  display: inline-block;
+  font-weight: normal;
+  line-height: 1;
+}
+.info_ul .info_li2 > span {
+  font-size: 14px;
+  margin-left: 8px;
+}
+.info_ul .info_li3 {
+  padding: 0 15px;
+  margin-top: 5px;
+}
+.info_ul .info_li3 > span:first-child {
+  font-size: 16px;
+  color: #262626;
+}
+.info_ul .info_li3 > b {
+  font-weight: bold;
+}
+
+.info_ul .info_li3 .info_li_up::after {
+  content: "";
+  display: inline-block;
+  border-bottom: 9px solid #ff0000;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.info_ul .info_li4 {
+  padding: 0 15px;
+  margin-top: 5px;
+}
+.info_ul .info_li4 > span:first-child {
+  color: #262626;
+  font-size: 16px;
+}
+.info_ul .info_li4 > b {
+  font-weight: bold;
+}
+
+.info_ul .info_li4 .info_li_up::after {
+  content: "";
+  display: inline-block;
+  border-bottom: 9px solid #ff0000;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.info_ul .info_li5 {
+  padding: 0 15px;
+  margin-top: 5px;
+}
+.info_ul .info_li5 > span:first-child {
+  margin-right: 8px;
+}
+.info_ul .info_li6 {
+  padding: 0 15px;
+  margin-top: 5px;
+}
+.info_ul .info_li6 > span:first-child {
+  margin-right: 8px;
+}
+.info_ul .info_li7 {
+  margin-top: 5px;
+  position: relative;
+}
+.info_ul .info_li7 > a > span {
+  font-size: 0;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: #ff6600;
+  border-radius: 100%;
+  position: relative;
+  top: 45px;
+  left: 100px;
+}
+
+.info_ul .info_li7 > a::before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 1px;
+  margin: 0 0 0 -7px;
+  background: #fff;
+  position: absolute;
+  left: 117px;
+  top: 68px;
+  z-index: 1;
+}
+.info_ul .info_li7 > a > span::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 15px;
+  margin: 0 0 0 -7px;
+  background: #fff;
+  position: absolute;
+  left: 24px;
+  top: 10px;
+}
+/* section02 */
+.section02 {
+  padding-top: 215px;
+  font-family: "Noto Sans", sans-serif;
+}
+.section02 .inner {
+  margin: 0 auto;
+}
+.section02 .sec02_head {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+.section02 .sec02_p {
+  margin: 30px 0 125px;
+  color: #262626;
+  font-size: 48px;
+  line-height: 70px;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: -0.03em;
+}
+.section02 .sec02_p .sec02_system {
+  padding: 0 0 0 238px;
+  background: url(https://www.hanwhasystems.com/resources/img/pc/com/img_logo.png)
+    no-repeat;
+  background-position: 0 -106px;
+  display: inline-block;
+  width: 0;
+  white-space: nowrap;
+  vertical-align: top;
+  overflow: hidden;
+}
+/* conlist */
+
+.section02 .conlist {
+  position: relative;
+  display: inline-block;
+  width: calc(100% + 40px);
+  margin-left: 114px;
+  vertical-align: top;
+  margin-bottom: 215px;
+}
+/* 양옆에 주황색줄 */
+.section02 .conlist::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 241px;
+  height: 1px;
+  background: #ff6600;
+  min-width: 630px;
+  width: 50vw;
+  right: 100%;
+}
+.section02 .conlist::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 241px;
+  height: 1px;
+  background: #ff6600;
+  min-width: 630px;
+  width: 50vw;
+  left: 80%;
+}
+/* //양옆주황색줄 */
+
+.conlist > li {
+  float: left;
+  width: 20%;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  word-break: keep-all;
+}
+.conlist > li > a {
+  position: relative;
+  display: block;
+  padding: 335px 35px 0;
+}
+.conlist > li:hover > a {
+  color: #ff6602;
+}
+.conlist > li:hover > a::after {
+  content: "";
+  background: #ff6602;
+}
+
+.conlist .con_li_1 > a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: 280px;
+  margin: 0 0 0 -50%;
+  background: url(https://www.hanwhasystems.com/resources/img/pc/content/visual_main3.png)
+    no-repeat -14px 0;
+}
+.conlist .con_li_2 > a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: 280px;
+  margin: 0 0 0 -50%;
+  background: url(https://www.hanwhasystems.com/resources/img/pc/content/visual_main3.png)
+    no-repeat -266px 0;
+}
+.conlist .con_li_3 > a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: 280px;
+  margin: 0 0 0 -50%;
+  background: url(https://www.hanwhasystems.com/resources/img/pc/content/visual_main3.png)
+    no-repeat -512px 0;
+}
+.conlist .con_li_4 > a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 100%;
+  height: 280px;
+  margin: 0 0 0 -50%;
+  background: url(https://www.hanwhasystems.com/resources/img/pc/content/visual_main3.png)
+    no-repeat -758px 0;
+}
+.conlist .con_li_1 > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 310px;
+  width: 8px;
+  height: 8px;
+  margin: 0 0 0 -4px;
+  background: #282828;
+  border-radius: 100%;
+}
+.conlist .con_li_2 > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 310px;
+  width: 8px;
+  height: 8px;
+  margin: 0 0 0 -4px;
+  background: #282828;
+  border-radius: 100%;
+}
+.conlist .con_li_3 > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 310px;
+  width: 8px;
+  height: 8px;
+  margin: 0 0 0 -4px;
+  background: #282828;
+  border-radius: 100%;
+}
+.conlist .con_li_4 > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 310px;
+  width: 8px;
+  height: 8px;
+  margin: 0 0 0 -4px;
+  background: #282828;
+  border-radius: 100%;
+}
+/* section03 */
+.section03 {
+  /* height: 2000px; */
+  margin-bottom: 225px;
+}
+.section03 .inner {
+}
+.section03 .sec03_head {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+.section03 .sec03_p {
+  margin: 30px 0 125px;
+  color: #262626;
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 400;
+  text-align: center;
+  position: relative;
+}
+.section03 .sec03_p .text-logo {
+  overflow: hidden;
+  display: inline-block;
+  width: 0;
+  background: url(https://www.hanwhasystems.com/resources/img/pc/com/img_logo.png)
+    no-repeat 0 -106px;
+  white-space: nowrap;
+  vertical-align: top;
+  padding: 0 0 0 238px;
+  position: relative;
+  bottom: 8px;
+}
+.section03 .sec03_a_wrap {
+  text-align: center;
+}
+.section03 .sec03_a {
+  display: inline-block;
+  padding: 1px 30px 10px 0;
+  color: #282828;
+  font-size: 16px;
+  position: relative;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  margin-bottom: 140px;
+}
+.section03 .sec03_a:hover {
+  color: #ff6602;
+  border-bottom-color: #ff6602;
+}
+.section03 .sec03_a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -1px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #282828;
+  border-radius: 50%;
+}
+.section03 .sec03_a:hover::before {
+  border-color: #ff6602;
+  background: #ff6602;
+}
+.section03 .sec03_a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -1px;
+  width: 0;
+  height: 0;
+  margin: 7px 7px 0 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 5px solid #282828;
+}
+.section03 .sec03_a:hover::after {
+  border-left-color: #fff;
+}
+.border_img > ul {
+  font-size: 16px;
+  font-family: "NotoSans", sans-serif;
+}
+
+.border_img > ul > li {
+  position: relative;
+  float: left;
+  width: 380px;
+  height: 485px;
+  border-top: 1px solid #282828;
+  margin-right: 30px;
+}
+.border_img > ul > li:last-child {
+  margin-right: 0;
+}
+
+.border_img .icon_txt1 {
+  display: inline-block;
+  min-width: 80px;
+  padding: 0 15px;
+  background: #272727;
+  color: #fff;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+.border_img > ul > li > a {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: calc(100% + 1px);
+  margin-top: -1px;
+  border-top: 1px solid #282828;
+}
+.border_img > ul > li > a::before {
+  content: "";
+  position: absolute;
+  bottom: 130px;
+  left: 50%;
+  display: block;
+  width: 2px;
+  height: 40px;
+  background: #fff;
+  opacity: 0;
+  transition: all ease 0.3s;
+  margin: -1px 0 0;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+.border_img > ul > li:hover > a::before {
+  z-index: 100;
+  opacity: 1;
+  transition: ease-in-out 1.2s;
+}
+.border_img > ul > li > a::after {
+  content: "";
+  position: absolute;
+  bottom: 150px;
+  left: 171px;
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: #fff;
+  opacity: 0;
+  transition: all ease 0.3s;
+  transform: translateY(50%);
+}
+.border_img > ul > li:hover > a::after {
+  opacity: 1;
+  z-index: 100;
+  transition: ease-in-out 1.2s;
+}
+.border_img > ul > li > a > strong {
+  display: block;
+  width: 100%;
+  height: 68px;
+  overflow: hidden;
+  font-size: 22px;
+  line-height: 34px;
+  white-space: normal;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+.border_img .date {
+  display: block;
+  font-size: 14px;
+  line-height: 24px;
+  color: #959595;
+  margin-bottom: 24px;
+}
+.border_img .img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+.border_img > ul > li:hover > a > .icon_txt1 {
+  background: #fc6700;
+}
+.border_img > ul > li:hover > a > strong {
+  color: #ff6700;
+  text-decoration: underline;
+}
+.border_img > ul > li:hover > a > div {
+  position: relative;
+  overflow: hidden;
+}
+.border_img > ul > li:hover > a > div::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 260px;
+  background-image: linear-gradient(
+    rgba(255, 102, 0, 0.7),
+    rgba(255, 102, 0, 0.7)
+  );
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.border_img > ul > li:hover > a > div > img {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
+
+/* 한화시스템 */
+.section04 {
+  font-family: "Noto Sans", sans-serif;
+}
+.section04 .social_txt > h3 {
+  font-size: 28px;
+  line-height: 1.4;
+  text-align: left;
+  color: #282828;
+  font-weight: 500;
+  margin-bottom: 55px;
+}
+.section04 .social_txt > h3 > span {
+  display: inline-block;
+  width: 0;
+  background: url(https://www.hanwhasystems.com/resources/img/pc/com/img_logo.png)
+    no-repeat 0 -231px;
+  white-space: nowrap;
+  padding: 0 0 0 130px;
+  overflow: hidden;
+  position: relative;
+  left: -1px;
+  /* background-position: 0 -231px; */
+}
+.social_btn_wrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+.social_btn_wrap .social_btn {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  background: #fff;
+  /* text-indent: -9999px; */
+  color: transparent;
+}
+.social_btn_wrap .social_btn:hover {
+  background: #ff6600;
+}
+.social_btn_wrap .social_btn.left {
+}
+.social_btn_wrap .social_btn.right {
+  position: absolute;
+  left: 80px;
+}
+.social_btn_wrap .social_btn.left::before {
+  content: "";
+  position: absolute;
+  left: 19px;
+  top: 14px;
+  width: 15px;
+  height: 15px;
+  border-left: 1px solid #959595;
+  border-bottom: 1px solid #959595;
+  transform: rotate(45deg);
+}
+.social_btn_wrap .social_btn.left:hover::before,
+.social_btn_wrap .social_btn.right:hover::before {
+  border-color: #fff;
+}
+.social_btn_wrap .social_btn.right::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 12px;
+  top: 14px;
+  width: 15px;
+  height: 15px;
+  border-right: 1px solid #959595;
+  border-bottom: 1px solid #959595;
+  transform: rotate(-45deg);
+}
+.face_wrap {
+}
+.face_wrap .hanwha_face {
+  color: #282828;
+  line-height: 20px;
+  padding: 1px 30px 10px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #282828;
+  position: relative;
+}
+.face_wrap .hanwha_face:hover {
+  border-color: #fc6700;
+  color: #fc6700;
+}
+.face_wrap .hanwha_face::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 1px solid #282828;
+  margin: 0 0 0;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 2px;
+}
+.face_wrap .hanwha_face:hover::before {
+  border-color: #ff6700;
+  background: #ff6700;
+}
+.face_wrap .hanwha_face::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 0;
+  height: 0;
+  margin: 7px 7px 0 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-left: 5px solid #282828;
+}
+.face_wrap .hanwha_face:hover::after {
+  border-left-color: #fff;
+}
+.social_ul_wrap {
+  width: 980px;
+  height: 316px;
+  position: relative;
+  top: -287px;
+  left: 310px;
+  /* margin-bottom: 215px; */
+  /* border: 1px solid black; */
+}
+.social_ul_wrap > ul {
+  position: relative;
+}
+.social_ul_wrap > ul > li > div {
+  width: 300px;
+  height: 316px;
+  /* border: 1px solid red; */
+  float: left;
+  margin-right: 25px;
+}
+.social_ul_wrap > ul > li > div > a > img {
+  width: 100%;
+  height: 100%;
+}
+.social_ul_wrap .social_li_01 {
+  /* z-index: 10; */
+  display: block;
+}
+.social_ul_wrap .social_li_02 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* z-index: 0; */
+  display: none;
+}
+
+.social_li_01 > div:hover::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 316px;
+  background: #ff6600;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.social_li_02 > div:hover::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 316px;
+  background: #ff6600;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.social_li_01 > div:hover > a::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 2px;
+  background: #fff;
+  transition: all ease 0.3s;
+  opacity: 1;
+  z-index: 2;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+}
+.social_li_01 > div:hover > a::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 56px;
+  background: #fff;
+  transition: all ease 0.3s;
+  opacity: 1;
+  z-index: 2;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -197px;
+}
+.social_li_02 > div:hover > a::before {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 2px;
+  background: #fff;
+  transition: all ease 0.3s;
+  opacity: 1;
+  z-index: 2;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 150px;
+}
+.social_li_02 > div:hover > a::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 56px;
+  background: #fff;
+  transition: all ease 0.3s;
+  opacity: 1;
+  z-index: 2;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -197px;
+}
+
+/* section05 */
+
+.section05 {
+  width: 100%;
+  height: 840px;
+  padding: 135px 0 0;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.section05::before {
+  content: "";
+  background: url(https://www.hanwhasystems.com/resources/img/pc/content/visual_main5_1.jpg)
+    no-repeat 50% 100%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1920px;
+  margin: 0 0 0 -960px;
+  z-index: -1;
+}
+.section05::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1920px;
+  margin: 0 0 0 -960px;
+  z-index: -1;
+}
+.section05 .headline {
+  color: #fff;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.section05 > p {
+  margin-bottom: 80px;
+  font-size: 50px;
+  line-height: 70px;
+}
+.section05 .text_logo2 {
+  padding: 0 0 0 147px;
+  height: 70px;
+  overflow: hidden;
+  display: inline-block;
+  width: 0;
+  background: url(https://www.hanwhasystems.com/resources/img/pc/com/img_logo.png)
+    no-repeat 0 -120px;
+  background-position: -300px -236px;
+  white-space: nowrap;
+  vertical-align: top;
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+.section05 .info {
+  display: inline-block;
+  width: 100%;
+  max-width: 1200px;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 24px;
+}
+/* .section05 .info > li::before {
+  content: "";
+  position: absolute;
+  height: 840px;
+  left: 193%;
+  top: -132%;
+  bottom: 0;
+  width: 1920px;
+  margin: 0 0 0 -960px;
+  z-index: -1;
+  opacity: 0;
+  background: url(https://www.hanwhasystems.com/resources/img/pc/com/img_logo.png)
+    no-repeat 50% 100%;
+  transition: all ease 1s;
+} */
+
+.section05 .info > li {
+  float: left;
+  width: calc(25% + 15px);
+  margin: 0 -8px;
+  height: 315px;
+  color: #fff;
+}
+.section05 .info > li > a > span > strong {
+  display: block;
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: normal;
+  color: #fff;
+}
+.section05 .info > li > a > span {
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 70px;
+}
+.section05 .info > li > a > span::before {
+  content: "";
+  transition: all ease 0.3s;
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 0;
+  height: 0;
+  background: #fff;
+  opacity: 0;
+  z-index: 30;
+}
+.section05 .info > li > a:hover > span::before {
+  width: 20px;
+  height: 2px;
+  opacity: 1;
+  z-index: 30;
+}
+.section05 .info > li > a > span::after {
+  content: "";
+  transition: all ease 0.3s;
+  position: absolute;
+  bottom: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 0;
+  height: 0;
+  background: #fff;
+  opacity: 0;
+  z-index: 30;
+}
+.section05 .info > li > a:hover > span::after {
+  width: 3px;
+  height: 20px;
+  opacity: 1;
+  z-index: 30;
+}
+.section05 .info > li {
+  position: relative;
+}
+.section05 .info > li > a::before {
+  content: "";
+  transition: all ease 0.3s;
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 65px;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transform: translate(-50%, 50%);
+}
+.section05 .info > li > a:hover::before {
+  width: 64px;
+  height: 64px;
+  background: #ff6600;
+  opacity: 1;
+}
+.section05 .info > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: url(https://www.hanwhasystems.com/resources/img/pc/com/pattern1.png)
+    no-repeat 50% 50%;
+  opacity: 0;
+  transform: scale(0.9);
+  display: none;
+}
+.section05 .info > li > a:hover::after {
+  opacity: 1;
+  transform: scale(1);
+  display: block;
+}
+/* footer 영역 */
+
+#footer {
+  border-top: 1px solid #dadada;
+  width: 100%;
+  display: block;
+}
+.footerlogo {
+  width: 60%;
+  height: 110px;
+  font-size: 16px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerlogo .flogo {
+  margin-top: 50px;
+  width: 158px;
+  height: 46px;
+}
+.footerlogo .footerbtn {
+  margin-top: 50px;
+  width: 210px;
+  height: 40px;
+  background-color: #fff;
+  border: none;
+  border-bottom: 1px solid #000;
+  text-align: justify;
+}
+.footerright {
+  width: 60%;
+  height: 150px;
+  margin: auto;
+}
+.footerright .copy {
+  display: inline-block;
+  font-size: 14px;
+  color: #767676;
+  margin-top: 50px;
+  vertical-align: top;
+  font-weight: 700;
+  padding-right: 20px;
+  letter-spacing: -1px;
+}
+.footerright .web-mark {
+  display: inline-block;
+  font-size: 16px;
+  color: #000;
+  vertical-align: top;
+  font-weight: 700;
+  padding-right: 20px;
+  letter-spacing: -1px;
+  margin-top: 10px;
+}
+.footerright .iconimg {
+  display: block;
+  float: right;
+  margin-top: -30px;
+}
+.footerright .iconimg .facebook {
+  margin-right: 10px;
+}

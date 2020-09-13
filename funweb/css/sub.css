@@ -1,0 +1,79 @@
+@charset "utf-8";
+#subContainer { }
+/* 서브헤더 공통 */
+#subHeader { height: 350px;
+            background: no-repeat center center / cover }
+#subHeader h2 { width: 1000px; margin: 0 auto;
+              padding-top: 120px;
+              text-align: center;
+              text-transform: uppercase;
+              font-size: 40px;
+             }
+/* 서브헤더 개별 */
+#subHeader.company { background-image: url(../images/bgCompany.jpg) }
+#subHeader.customer { background-image: url(../images/bgCustomer.jpg); color: #fff; }
+/* 서브 Wrap */
+#subWrap { overflow: hidden; width: 1000px; margin: 30px auto 0; }
+/* 서브네비 - lnb */
+#lnb { width: 250px; float: left; }
+#lnb h3 { width: 250px; height: 90px; margin-bottom: 15px;
+          background: #3c3c3c; color: #fff;
+          text-transform: uppercase; text-align: center;
+          line-height: 90px; font-size: 30px; font-weight: normal; }
+#lnb li a { display: block; height: 49px;
+          	border-bottom: 1px solid #969a99;
+          	background: url(../images/bulletSnb.png) no-repeat 229px center;
+          	color: #6c655f;
+            line-height: 49px;
+          	text-transform: uppercase;
+            text-indent: 22px; }
+#lnb li a:hover {
+  background-image: url(../images/bulletSnbOver.png);
+  color: #ff6a00; border-bottom-color: #ff6a00;
+}
+/* 서브컨텐츠 */
+#subContent { width: 710px; float: right; }
+#subContent h3 { color: #ccc;
+                text-transform: capitalize;
+                /* font-weight: normal;
+                font-size: 50px;
+                font-family: "Times New Roman";  */
+                font: 50px "Times New Roman", serif;
+              }
+/* 개별페이지 */
+/* company welcome */
+.company_welcome { width: 665px; margin-left: 20px;  }
+.company_welcome figure { float: right; margin-left: 15px; text-align: center; }
+.company_welcome p { margin-bottom: 18px;
+                    text-align: justify;
+                    /* word-break: break-all; */
+                  }
+/* customercenter notice */
+#notice { width: 660px; }
+#notice thead th { height: 30px; color: #fff;
+                  background: linear-gradient(180deg, #68b0eb 0%, #4b9def 49%, #338ae7 51%, #2472de 100%);
+                  line-height: 30px;
+                  text-align: center;
+                  text-transform: capitalize;
+                  font-weight: bold;
+                  letter-spacing: 0.1em;
+                }
+#notice thead .no { width: 56px; border-radius: 5px 0 0 5px; }
+#notice thead .title { width: 376px; }
+#notice thead .write { width: 100px; }
+#notice thead .date { width: 72px; }
+#notice thead .read { width: 56px; border-radius: 0 5px 5px 0; }
+#notice tbody td { padding: 7px 0; border-bottom: 1px dotted #989898; text-align: center; }
+#notice tbody .listTitle { text-align: left; }
+/* 공지사항 검색 */
+#noticeSearch { text-align: right; margin: 15px 45px 0 0; }
+#searchBox { width: 220px; height: 20px;
+            border: 1px solid #333;
+            border-radius: 10px;
+            background: #fefced; }
+#searchBtn { width: 90px; height: 22px;
+            border: 1px solid #999; border-radius: 10px; color: #fff;
+            background: linear-gradient(180deg, #66aaff 0%, #3396f3 50%, #3178e4 100%)}
+/* 페이지 링크 */
+#page_control { margin-top: 36px; text-align: center; }
+#page_control a { margin: 0 12px; color: #333; }

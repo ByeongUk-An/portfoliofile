@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* 초기화 */
+body, h1, h2, h3, h4, p, ul, dl, dd, figure, th, td, form, fieldset, input { margin: 0; padding: 0; }
+ul li { list-style: none; }
+a { text-decoration: none; }
+table { border-collapse: collapse; }
+fieldset, img { border: 0; }
+address { font-style: normal; }
+small { font-size: 1em; }
+hr { display: none; }
+.hidden { position: absolute; left: -9999px; }
+/* 웹폰트 - segoeui */
+@font-face { font-family: segoeui;
+  src: url(../webfont/segoeui.ttf),
+      url(../webfont/segoeui.eot),
+      url(../webfont/segoeui.woff)
+}
+body { font-family: "Segoe UI", segoeui; }
+/* 헤더 */
+#header { position: relative; width: 1000px; height: 187px; margin: 0 auto; }
+#header h1 { width: 249px; height: 50px; padding: 90px 0 0 50px; }
+#header h1 a { overflow: hidden; display: block; width: 249px; height: 50px;
+              text-indent: 101%;
+              background: url(../images/logo.png) no-repeat; }
+/* 멤버쉽 */
+#membership { position: absolute; top: 18px; right: 80px; }
+#membership ul li { position: relative; float: left; }
+#membership ul li.goLogin { padding-right: 10px; }
+#membership ul li.goJoin { padding-left: 10px; }
+#membership ul li.goLogin::after { content: ""; position: absolute; top: 7px; right: 0;
+                                  height: 11px; border-right: 1px solid #bea082; }
+#membership ul li.goJoin::before { content: ""; position: absolute; top: 7px; left: 0;
+                                  height: 11px; border-left: 1px solid #82a0be; }
+#membership ul li a { font-size: 14px; color: #333; }
+/* GNB */
+#gnb { position: absolute; top: 106px; right: 50px;  }
+#gnb ul li { float: left; margin-left: 10px; }
+#gnb ul li a { padding: 0 10px; text-transform: uppercase; font-size: 14px; color: #333; }
+#gnb ul li a:hover { padding-bottom: 10px; border-bottom: 3px solid #00bff3; }
+
+/* footer */
+#footerWrap { margin-top: 55px; border-top: 1px solid #a0a0a0;  }
+#footer { overflow: hidden; width: 720px; margin: 0 auto;
+          padding: 20px 76px 20px 204px;
+          background: url(../images/logoFooter.png) no-repeat 55px 23px; }
+.info { float: left; font-size: 14px; }
+.sns { float: right; }
+.sns li { width: 33px; height: 33px;
+          float: left; margin-left: 17px; }
+.sns li a { display: block; width: 33px; height: 33px;
+            text-indent: -5000px;
+            background: url(../images/bgSns.png) no-repeat; }
+.sns .twitter a { background-position-x: right; }
