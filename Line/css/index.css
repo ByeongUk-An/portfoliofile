@@ -509,5 +509,5 @@ header {
 }
 
 .slick-arrow {
-  display: none;
+  display: none !important;
 }
