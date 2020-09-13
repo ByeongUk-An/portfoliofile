@@ -507,3 +507,7 @@ header {
   font-family: "Roboto";
   font-weight: 700;
 }
+
+.slick-arrow {
+  display: none;
+}
