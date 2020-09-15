@@ -346,7 +346,8 @@ ul {
   width: 100%;
 }
 .inner {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 /* stock_info */
@@ -1362,3 +1363,5 @@ ul {
 .footerright .iconimg .facebook {
   margin-right: 10px;
 }
+
+/* 미디어쿼리  480px */
