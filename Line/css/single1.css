@@ -405,9 +405,15 @@ body {
   header {
     width: 100%;
   }
+  .contents_single1_wrap {
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 134px;
+  }
   .contents_single1_wrap .single_cont_inner {
     width: 100%;
   }
+
   .header_inner {
     width: 100%;
   }
@@ -464,6 +470,9 @@ body {
     justify-content: space-between;
     padding: 0 10px;
   }
+  .sec_cont2 {
+    padding-right: 35px;
+  }
   .footer .footer_ul_wrap > ul {
     width: 100%;
     flex-wrap: wrap;
@@ -472,7 +481,7 @@ body {
     margin: 10px 5px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 535px) {
   .contents_single1_wrap {
     height: auto;
   }
