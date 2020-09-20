@@ -491,3 +491,146 @@ li {
 .textp2 > a:hover {
     text-decoration: none;
 }
+/* 모바일 display css */
+.hambug {
+  display: none;
+}
+.xbtn {
+  display: none;
+}
+.mobile__wrap {
+  display: none;
+}
+.mobile__wrap > div {
+  position: relative;
+}
+.margin_arrow {
+  position: absolute;
+  right: 20px;
+}
+
+
+/* 태블릿 */
+@media (max-width: 1023px) {
+  header {
+    width: 100%;
+  }
+  .header_inner {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .header_inner .header_right {
+    display: none;
+  }
+  .header_inner .header_nav_left ul {
+    display: none;
+  }
+  .hambug {
+    display: block;
+    cursor: pointer;
+    color: #06b900;
+    font-size: 25px;
+  }
+
+  .hambug.off {
+    display: none;
+  }
+  .xbtn {
+    display: none;
+    cursor: pointer;
+    color: #06b900;
+    font-size: 25px;
+  }
+  .xbtn.on {
+    display: block;
+  }
+  .mobile__wrap {
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: #fff;
+    position: fixed;
+    top: 51px;
+    left: 0;
+  }
+  .mobile__wrap.on {
+    display: block;
+  }
+  .mobile__wrap > div {
+    border-bottom: 1px solid #cccccc;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+  }
+  .mobile__wrap > div > a {
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  .header_inner .header_nav_left {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .section_wrap .section_inner {
+    width: 100%;
+  }
+  #lineInner {
+    width:100%;
+  }
+  #lineInner>section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgWrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .contentWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .Ttext {
+    margin-top: 20px;
+  }
+  #lineInner>section>div>p {
+    margin: 20px 0 20px 0;
+  }
+  .lineBt {
+    padding-bottom: 0;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+  .contentBt {
+    width: 100%;
+    text-align: center;
+  }
+  .lineFt {
+    width: 100%;
+  }
+  .navFt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  } 
+  .btP {
+    width: 100%;
+  }
+}
+@media (max-width:480px) {
+  .Ttext {
+    font-size: 30px;
+  }
+  #lineInner {
+    padding: 0 15px;
+  }
+  .contentBt > h2 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 1.4;
+  }
+}
