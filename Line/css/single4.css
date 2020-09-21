@@ -494,6 +494,8 @@ li {
   position: absolute;
   right: 20px;
 }
+
+
 @media (max-width: 1023px) {
   header {
     width: 100%;
@@ -642,5 +644,18 @@ li {
   }
   .btP {
     width: 100%;
+  }
+  .innerText>h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .innerTextR>h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .textp2 > a {
+    font-size: 14px;
   }
 }
