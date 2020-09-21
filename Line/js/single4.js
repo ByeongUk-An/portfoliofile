@@ -13,3 +13,18 @@ xbtn.addEventListener("click", () => {
   hambug.classList.remove("off");
   xbtn.classList.remove("on");
 });
+
+const img4 = "./img/line4.jpeg";
+const mimg4 = "./img/mline4.jpeg";
+
+const imgb = document.querySelector(".img4");
+
+window.onresize = () => {
+  if (window.innerWidth <= 1023) {
+    imgb.style.backgroundImage =
+      "url(https://d.line-scdn.net/stf/line-lp/SP_LINE_Store_ko_1231231.png)";
+  } else {
+    imgb.style.backgroundImage =
+      "url(https://d.line-scdn.net/stf/line-lp/PC_LINE_Store_ko_1231231.png)";
+  }
+};

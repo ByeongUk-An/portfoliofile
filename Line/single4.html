@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>무료 통화 메시지 앱 LINE</title>
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="css/single4.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
@@ -17,10 +18,13 @@
       rel="shortcut icon"
       href="https://line.me/apple-touch-icon-precomposed.png"
     />
+    <script
+      src="https://kit.fontawesome.com/5587d92f60.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <script src="js/index.js"></script>
     <header>
       <div class="header_wrap">
         <div class="header_inner">
@@ -55,6 +59,8 @@
               </li>
               <!-- text transform 사용하기 -->
             </ul>
+            <div class="hambug"><i class="fas fa-bars"></i></div>
+            <div class="xbtn"><i class="fas fa-times"></i></div>
           </div>
           <div class="header_right">
             <div class="header_right_select">
@@ -94,13 +100,45 @@
               <!-- ul 끝나는 지점 가상클래스로 백그라운드 이미지 넣기 -->
             </ul>
           </div>
+          <div class="mobile__wrap">
+            <div>
+              <a href="#"
+                ><i class="fas fa-comment-dots"></i> 홈
+                <i class="fas fa-chevron-right margin_arrow"></i
+              ></a>
+            </div>
+            <div>
+              <a href="#"
+                ><i class="fas fa-download"></i> 다운로드
+                <i class="fas fa-chevron-right margin_arrow"></i
+              ></a>
+            </div>
+            <div>
+              <a href="#"
+                ><i class="fab fa-app-store-ios"></i> 패밀리앱
+                <i class="fas fa-chevron-right margin_arrow"></i
+              ></a>
+            </div>
+            <div>
+              <a href="#"
+                ><i class="fab fa-steam"></i> 게임
+                <i class="fas fa-chevron-right margin_arrow"></i
+              ></a>
+            </div>
+            <div>
+              <a href="#"
+                ><i class="fas fa-comment-dollar"></i> LINE STORE
+                <i class="fas fa-chevron-right margin_arrow"></i
+              ></a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <div id="Timg">
       <ul>
-        <li>
+        <li class="img4">
           <a href="#" class="storeBt"></a>
         </li>
       </ul>
@@ -223,5 +261,6 @@
         <small>ⓒ LINE Corporation</small>
       </p>
     </footer>
+    <script src="js/single4.js"></script>
   </body>
 </html>
